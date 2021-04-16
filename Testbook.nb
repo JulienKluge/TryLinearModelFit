@@ -1,0 +1,105 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3086,         97]
+NotebookOptionsPosition[      2517,         79]
+NotebookOutlinePosition[      2915,         95]
+CellTagsIndexPosition[      2872,         92]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", 
+   RowBox[{
+   "TryLinearModelFit", ",", "checkOptions", ",", "iTryLinearModelFit"}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<TryLinearModelFit.m\>\""}], "}"}], "]"}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"data", "=", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{
+         RowBox[{"0.5", "*", 
+          RowBox[{"x", "^", "2"}]}], "-", 
+         RowBox[{"2", "x"}], "+", "3", "+", 
+         RowBox[{"RandomVariate", "[", 
+          RowBox[{"NormalDistribution", "[", 
+           RowBox[{"0", ",", "0.1"}], "]"}], "]"}]}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "1"}], ",", "2", ",", "0.1"}], "}"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"TryLinearModelFit", "[", 
+  RowBox[{"data", ",", 
+   RowBox[{
+    RowBox[{"a", "*", 
+     RowBox[{"x", "^", "2"}]}], "+", 
+    RowBox[{"b", "*", "x"}], "+", "c"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "c"}], "}"}], ",", "x", ",", 
+   RowBox[{"Method", "\[Rule]", "\"\<\>\""}]}], "]"}]}], "Input",
+ CellLabel->"In[45]:=",ExpressionUUID->"f95d0d92-767d-4b82-88c7-0ed77bd8460e"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TryLinearModelFit", "nullopt", 
+   "\"TryLinearModelFit does not need \\!\\(\\*RowBox[{\\\"Method\\\"}]\\) \
+specified as an option.\"", 2, 48, 9, 23101978065443364496, "Local", 
+   "Global`TryLinearModelFit"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellLabel->
+  "During evaluation of \
+In[45]:=",ExpressionUUID->"4163087c-b0bf-4751-9008-8ae943cd784d"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"2f10f8f6-718e-4386-8535-7402d81ee1f6"]
+},
+WindowSize->{959, 1012},
+WindowMargins->{{-5, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"67f7a812-2de0-49d5-8cbb-c0e0040176af"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1445, 41, 126, "Input",ExpressionUUID->"f95d0d92-767d-4b82-88c7-0ed77bd8460e"],
+Cell[2028, 65, 389, 9, 23, "Message",ExpressionUUID->"4163087c-b0bf-4751-9008-8ae943cd784d"]
+}, Open  ]],
+Cell[2432, 77, 81, 0, 28, "Input",ExpressionUUID->"2f10f8f6-718e-4386-8535-7402d81ee1f6"]
+}
+]
+*)
+
